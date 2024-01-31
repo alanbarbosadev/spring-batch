@@ -11,7 +11,7 @@ public class User {
 
     @Id
     @Column(name="ID")
-    private Integer id;
+    private String id;
     @Column(name="FIRST_NAME")
     private String firstName;
     @Column(name="LAST_NAME")
@@ -23,7 +23,7 @@ public class User {
     @Column(name="IP_ADDRESS")
     private String ipAddress;
 
-    public User(Integer id, String firstName, String lastName, String email, String gender, String ipAddress) {
+    public User(String id, String firstName, String lastName, String email, String gender, String ipAddress) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -35,11 +35,11 @@ public class User {
     public User() {
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
